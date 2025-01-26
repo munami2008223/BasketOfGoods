@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+package org.example;
 
-public class NotFoundException {
+public class NotFoundException extends RuntimeException {
+    public NotFoundException(int id) {
+        super("Element with id: " + id + "not found");
+    }
 }
